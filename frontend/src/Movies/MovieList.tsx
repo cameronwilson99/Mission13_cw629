@@ -1,15 +1,17 @@
-import { async } from 'q';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Movie } from './movies';
 
 function MovieList() {
   const [movieData, setMovieData] = useState<Movie[]>([]);
 
-  const fetchMovies = async () => {
-    const rsp = await fetch('https://localhost:4000/movie');
-    const temp = await rsp.json();
-    setMovieData(temp);
-  };
+  useEffect(() => {
+    const fetchMovies = async () => {
+      const rsp = await fetch('https://localhost:4000/movie');
+      const temp = await rsp.json();
+      setMovieData(temp);
+    };
+    fetchMovies();
+  }, []);
 
   return (
     <>
