@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import MovieList from './MovieList';
+import MovieList from './Movies/MovieList';
 import Home from './Home';
 import Podcast from './Podcast';
 import NavBar from './Layout';
