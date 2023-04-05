@@ -5,7 +5,7 @@ function NavBar() {
     <>
       <nav className="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div className="container">
-          <Link to="./components/Home" className="navbar-brand">
+          <Link to="./" className="navbar-brand">
             Hilton Movies
           </Link>
           <button
@@ -22,7 +22,7 @@ function NavBar() {
           <div className="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
             <ul className="navbar-nav flex-grow-1">
               <li className="nav-item">
-                <Link to="/Home" className="nav-link text-dark">
+                <Link to="/" className="nav-link text-dark">
                   Home
                 </Link>
               </li>
